@@ -121,13 +121,13 @@ def main():
     try:
         # params = load_params('params.yaml')['model_building']
         params = {'n_estimators': 25, 'random_state': 42}
-        train_data = load_data('Email-SMS-Spam-Classifier/data/processed/train_tfidf.csv')
+        train_data = load_data('./data/processed/train_tfidf.csv')
         X_train = train_data.iloc[:, :-1].values
         y_train = train_data.iloc[:, -1].values
 
         clf = train_model(X_train, y_train, params)
 
-        model_save_path = 'Email-SMS-Spam-Classifier/models/model.pkl'
+        model_save_path = './models/model.pkl'
         save_model(clf, model_save_path)
 
     except Exception as e:
