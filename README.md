@@ -1,5 +1,5 @@
 
-## 🚀 Project Overview
+## Project Overview
 
 This project classifies incoming Email/SMS messages as **Spam** or **Not Spam (Ham)** using Natural Language Processing (NLP) and Machine Learning techniques. It is designed with **reproducibility, scalability** in mind.
 
